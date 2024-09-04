@@ -41,17 +41,17 @@ public class Main {
 
     private static void imprimirLista(List<Aluno> alunos) {
         int total = alunos.size();
-        int limit = 60000;
+        int limite = 60000;
 
-        for (int i = 0; i < Math.min(limit, total); i++) {
+        for (int i = 0; i < Math.min(limite, total); i++) {
             System.out.println(alunos.get(i));
         }
 
-        if (total > limit * 2) {
+        if (total > limite * 2) {
             System.out.println("...");
         }
 
-        for (int i = Math.max(total - limit, limit); i < total; i++) {
+        for (int i = Math.max(total - limite, limite); i < total; i++) {
             System.out.println(alunos.get(i));
         }
     }
