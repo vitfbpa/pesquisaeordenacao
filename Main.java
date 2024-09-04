@@ -15,17 +15,17 @@ public class Main {
         List<Aluno> alunosBolha = new ArrayList<>(alunos);
         Ordenacoes.bolhaSort(alunosBolha);
         System.out.println("\nOrdenado com o método Bolha:");
-        imprimirLista(alunosBolha);
+        // imprimirLista(alunosBolha);
 
         List<Aluno> alunosSelecao = new ArrayList<>(alunos);
         Ordenacoes.selecaoSort(alunosSelecao);
         System.out.println("\nOrdenado com o método Seleção:");
-        imprimirLista(alunosSelecao);
+        // imprimirLista(alunosSelecao);
 
         List<Aluno> alunosInsercao = new ArrayList<>(alunos);
         Ordenacoes.insercaoSort(alunosInsercao);
         System.out.println("\nOrdenado com o método Inserção:");
-        imprimirLista(alunosInsercao);
+        // imprimirLista(alunosInsercao);
     }
 
     private static List<Aluno> gerarAlunos(int quantidade) {
@@ -41,7 +41,7 @@ public class Main {
 
     private static void imprimirLista(List<Aluno> alunos) {
         int total = alunos.size();
-        int limit = 10;
+        int limit = 60000;
 
         for (int i = 0; i < Math.min(limit, total); i++) {
             System.out.println(alunos.get(i));
